@@ -1,0 +1,22 @@
+.section{
+    margin-top: 100px;
+    min-height: calc(100vh - 100px);
+    h1{
+        max-width: 700px;
+        margin-top: 5rem;
+        margin-bottom: 2.5rem;
+        font-size: 3.5rem;
+        span{
+            background: var(--primary-color);
+            color: var(--background-color);
+            padding: 0 10px;
+            border-radius: var(--border-radius);
+            transform: rotate(-2deg);
+            display: inline-block;
+        }
+    }
+    p{
+        text-align: justify;
+        max-width: 700px;
+    }
+}
