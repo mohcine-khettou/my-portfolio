@@ -9,7 +9,7 @@ const ContactSection = () => {
             <span>Contact</span>
         </div>
         <h2 className="section-title">
-            Let's work <span className="green-text">Together</span>
+            Let&apos;s work <span className="green-text">Together</span>
         </h2>
         <form>
             <div>

@@ -12,7 +12,7 @@ const HeroSection = () => {
             Experienced Full-Stack <br /> <span>web Developer</span>  Ready to Elevate Your Projects
         </h1>
         <p>
-            I'm a dedicated full-stack developer with a fervent passion for web development. My mission is to be a trusted partner for businesses in achieving online success.
+            I&apos;m a dedicated full-stack developer with a fervent passion for web development. My mission is to be a trusted partner for businesses in achieving online success.
         </p>
     </section>
   )

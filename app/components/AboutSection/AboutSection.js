@@ -14,7 +14,7 @@ const AboutSection = () => {
               <br /> for brands
         </h2>
         <p>
-            More than just lines of code, I craft interactive experiences that captivate audiences and drive results. As a full-stack developer, I bridge the gap between design and functionality, ensuring your website is both visually stunning and user-friendly. Let's collaborate and unlock your online potential.
+            More than just lines of code, I craft interactive experiences that captivate audiences and drive results. As a full-stack developer, I bridge the gap between design and functionality, ensuring your website is both visually stunning and user-friendly. Let&apos;s collaborate and unlock your online potential.
         </p>
     </section>
   )
