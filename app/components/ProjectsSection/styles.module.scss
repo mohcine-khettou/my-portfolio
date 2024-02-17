@@ -1,0 +1,94 @@
+.portfolioItem{
+    max-width: 700px;
+    margin-bottom: 4rem;
+    & > img{
+        border-radius: 30px;
+        max-width: 750px;
+        height: 400px;
+        margin-bottom: 2rem;
+        cursor: pointer;
+    }
+    & > button{
+        font-size: 1.5rem;
+        transition: var(--transition);
+        border-bottom: 1px solid transparent;
+    }
+    &:hover > button{
+        border-color: var(--text-color);
+    }
+}
+
+.portfolioDetails{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+    background: var(--background-color);
+    padding: 5vh 0;
+    animation: fade-in .6s ease forwards ;
+    & > div:first-child{
+        max-width: 900px;
+        padding: 3rem;
+        position: relative;
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        button:first-child{
+            position: absolute;
+        }
+        img{
+            width: 100%;
+            border-radius: 30px;
+            height: 500px;
+        }
+        h3{
+            text-align: left;
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+        p{
+            font-size: 1rem;
+        }
+        ul{
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+        li > span:first-child{
+            margin-right: 5px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        li>span:last-child{
+            color : rgba(255, 255, 255, 0.7)
+        }
+        li > a:last-child{
+            color: var(--primary-color);
+        }
+    }
+
+    
+}
+
+.slider{
+    ul{
+        bottom: -35px;
+        li button::before {
+            color: var(--text-color);
+        }
+    }
+    
+}
+
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
