@@ -11,7 +11,7 @@ const PortfolioItem = ({
   technologies,
   url,
 }) => {
-  const [showDetails, setShowDetails] = useState(id === "meublux-client");
+  const [showDetails, setShowDetails] = useState(false);
   const toggleShow = () => {
     setShowDetails(!showDetails);
   };
