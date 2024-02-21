@@ -21,12 +21,12 @@
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 0, 0);
+  background-color: rgba(254, 254, 254, 0.5);
 }
 
 body {
@@ -73,7 +73,7 @@ h5 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin-bottom: 1.5rem;
   max-width: 700px;
   text-align: justify;
@@ -120,12 +120,12 @@ button {
 .form-control > input,
 .form-control > textarea {
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   background: transparent;
   color: #fff;
   padding: 0.75rem 1.25rem;
-  transition: all 0.4s;
+  transition: all 0.4s ease-in-out;
 }
 .form-control > input:focus,
 .form-control > textarea:focus {
@@ -141,7 +141,24 @@ button {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.btn {
+  background: var(--primary-color);
+  color: var(--background-color);
+  text-transform: capitalize;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  padding: 0.7rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  transition: var(--transition);
+  border: 2px solid var(--primary-color);
+}
 
+.btn:hover {
+  background: var(--background-color);
+  color: var(--primary-color);
+}
 .green-text {
   color: var(--primary-color);
 }
@@ -150,10 +167,6 @@ button {
   margin: 0 auto;
   width: 90%;
   max-width: var(--max-width);
-}
-
-.main {
-  padding-left: 500px;
 }
 
 .subtitle {
@@ -182,4 +195,31 @@ button {
   opacity: 1 !important;
   color: var(--text-color) !important;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1100px) {
+  main {
+    max-width: 800px !important;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .main {
+    padding-left: 500px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 }

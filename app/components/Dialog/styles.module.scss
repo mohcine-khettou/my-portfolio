@@ -1,0 +1,65 @@
+.dialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .8);
+    max-width: none;
+    button {
+        transition: .3s ease;
+        border-radius: 50%;
+        padding: 12px;
+    }
+
+    button:hover {
+        background: rgba(255, 255, 255, 0.1)
+    }
+
+    button:focus {
+        box-shadow: 0 0 0 0.2rem rgba(94, 94, 95, 0.5);
+    }
+
+    p {
+        font-size: 1.125rem;
+        padding-right: 40px;
+    }
+}
+
+.message {
+    padding: 24px;
+    background: var(--background-color);
+    border-radius: 8px;
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, .2), 0px 24px 38px 3px rgba(0, 0, 0, .14), 0px 9px 46px 8px rgba(0, 0, 0, .12);
+    border: 1px solid hsl(240 3.7% 15.9%);
+    animation: showMessage .3s ease forwards;
+    min-width: 400px;
+}
+
+.header {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span {
+        font-weight: 700;
+        font-size: 1.25rem;
+        text-transform: capitalize;
+    }
+}
+
+@keyframes showMessage {
+    0% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+
