@@ -31,7 +31,9 @@ const Sidebar = () => {
             <Twitter />
           </a>
         </div>
-        <button className="btn">Click me</button>
+        <a href="#portfolio" className={styles.btn + " btn"}>
+          my projects
+        </a>
       </div>
     </aside>
   );

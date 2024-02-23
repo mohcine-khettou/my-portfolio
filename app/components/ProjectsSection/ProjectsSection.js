@@ -5,7 +5,7 @@ import projects from './projects'
 import PortfolioItem from './PortfolioItem'
 const ProjectsSection = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='portfolio'>
         <div className="subtitle">
             <span><Portfolio /></span>
             <span>Portfolio</span>
